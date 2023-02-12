@@ -32,7 +32,7 @@ object MainPage: TMainPage
   object Label2: TLabel
     Left = 72
     Top = 200
-    Width = 209
+    Width = 193
     Height = 16
     Caption = 'Owner'#39's Personal Information'
     Font.Charset = DEFAULT_CHARSET
@@ -56,8 +56,8 @@ object MainPage: TMainPage
     ParentFont = False
   end
   object Label4: TLabel
-    Left = 72
-    Top = 328
+    Left = 512
+    Top = 256
     Width = 194
     Height = 14
     Caption = 'Full Name (As per Ghana Card ID) *'
@@ -70,7 +70,7 @@ object MainPage: TMainPage
   end
   object Label5: TLabel
     Left = 72
-    Top = 400
+    Top = 320
     Width = 67
     Height = 14
     Caption = 'Nationality *'
@@ -82,8 +82,8 @@ object MainPage: TMainPage
     ParentFont = False
   end
   object Label6: TLabel
-    Left = 72
-    Top = 472
+    Left = 512
+    Top = 320
     Width = 31
     Height = 14
     Caption = 'Sex *'
@@ -96,7 +96,7 @@ object MainPage: TMainPage
   end
   object Label7: TLabel
     Left = 72
-    Top = 544
+    Top = 384
     Width = 81
     Height = 14
     Caption = 'Date of Birth *'
@@ -108,8 +108,8 @@ object MainPage: TMainPage
     ParentFont = False
   end
   object Label8: TLabel
-    Left = 72
-    Top = 616
+    Left = 512
+    Top = 384
     Width = 85
     Height = 14
     Caption = 'Email Address *'
@@ -122,7 +122,7 @@ object MainPage: TMainPage
   end
   object Label9: TLabel
     Left = 72
-    Top = 688
+    Top = 448
     Width = 92
     Height = 14
     Caption = 'Mobile Number *'
@@ -133,35 +133,100 @@ object MainPage: TMainPage
     Font.Style = []
     ParentFont = False
   end
+  object Label10: TLabel
+    Left = 512
+    Top = 448
+    Width = 167
+    Height = 14
+    Caption = 'Personal/National ID Number *'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 72
+    Top = 512
+    Width = 115
+    Height = 14
+    Caption = 'Document Number *'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label12: TLabel
+    Left = 512
+    Top = 512
+    Width = 105
+    Height = 14
+    Caption = 'Place of Issuance *'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label13: TLabel
+    Left = 72
+    Top = 576
+    Width = 115
+    Height = 14
+    Caption = 'Document Number *'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label14: TLabel
+    Left = 512
+    Top = 576
+    Width = 105
+    Height = 14
+    Caption = 'Place of Issuance *'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object Surname: TEdit
     Left = 72
     Top = 276
-    Width = 865
+    Width = 377
     Height = 21
     TabOrder = 0
     TextHint = 'Surname'
   end
   object FullName: TEdit
-    Left = 72
-    Top = 348
-    Width = 865
+    Left = 512
+    Top = 276
+    Width = 377
     Height = 21
     TabOrder = 1
     TextHint = 'FullName'
   end
   object Nationality: TComboBox
     Left = 72
-    Top = 420
-    Width = 865
+    Top = 340
+    Width = 377
     Height = 21
     TabOrder = 2
     TextHint = 'Select'
     OnChange = NationalityChange
   end
   object Sex: TComboBox
-    Left = 72
-    Top = 492
-    Width = 865
+    Left = 512
+    Top = 340
+    Width = 377
     Height = 21
     TabOrder = 3
     TextHint = 'Select'
@@ -169,26 +234,66 @@ object MainPage: TMainPage
   end
   object DateOfBirth: TEdit
     Left = 72
-    Top = 564
-    Width = 865
+    Top = 404
+    Width = 377
     Height = 21
     TabOrder = 4
     TextHint = 'dd/mm/yyyy'
   end
   object EmailAddress: TEdit
-    Left = 72
-    Top = 636
-    Width = 865
+    Left = 512
+    Top = 404
+    Width = 377
     Height = 21
     TabOrder = 5
     TextHint = 'Email Address'
   end
   object MobileNumber: TEdit
     Left = 72
-    Top = 708
-    Width = 865
+    Top = 468
+    Width = 377
     Height = 21
     TabOrder = 6
     TextHint = '+233'
+  end
+  object NationalID: TEdit
+    Left = 512
+    Top = 468
+    Width = 377
+    Height = 21
+    TabOrder = 7
+    TextHint = 'ID Number'
+  end
+  object DocumentNumber: TEdit
+    Left = 72
+    Top = 532
+    Width = 377
+    Height = 21
+    TabOrder = 8
+    TextHint = 'Document Number'
+  end
+  object PlaceOfInsurance: TEdit
+    Left = 512
+    Top = 532
+    Width = 377
+    Height = 21
+    TabOrder = 9
+    TextHint = 'Place of Insurance'
+  end
+  object Edit1: TEdit
+    Left = 72
+    Top = 596
+    Width = 377
+    Height = 21
+    TabOrder = 10
+    TextHint = 'Document Number'
+  end
+  object Edit2: TEdit
+    Left = 512
+    Top = 596
+    Width = 377
+    Height = 21
+    TabOrder = 11
+    TextHint = 'Place of Insurance'
   end
 end

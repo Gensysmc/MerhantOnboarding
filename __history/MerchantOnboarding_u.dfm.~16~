@@ -1,0 +1,194 @@
+object MainPage: TMainPage
+  Left = 0
+  Top = 0
+  Width = 1023
+  Height = 788
+  AutoScroll = True
+  Caption = 'MainPage'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 416
+    Top = 112
+    Width = 221
+    Height = 19
+    Caption = 'Merchant Onboarding Form'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 72
+    Top = 200
+    Width = 209
+    Height = 16
+    Caption = 'Owner'#39's Personal Information'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 72
+    Top = 256
+    Width = 190
+    Height = 14
+    Caption = 'Surname (As per Ghana Card ID) *'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 72
+    Top = 328
+    Width = 194
+    Height = 14
+    Caption = 'Full Name (As per Ghana Card ID) *'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 72
+    Top = 400
+    Width = 67
+    Height = 14
+    Caption = 'Nationality *'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 72
+    Top = 472
+    Width = 31
+    Height = 14
+    Caption = 'Sex *'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 72
+    Top = 544
+    Width = 81
+    Height = 14
+    Caption = 'Date of Birth *'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 72
+    Top = 616
+    Width = 85
+    Height = 14
+    Caption = 'Email Address *'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 72
+    Top = 688
+    Width = 92
+    Height = 14
+    Caption = 'Mobile Number *'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Surname: TEdit
+    Left = 72
+    Top = 276
+    Width = 865
+    Height = 21
+    TabOrder = 0
+    TextHint = 'Surname'
+  end
+  object FullName: TEdit
+    Left = 72
+    Top = 348
+    Width = 865
+    Height = 21
+    TabOrder = 1
+    TextHint = 'FullName'
+  end
+  object Nationality: TComboBox
+    Left = 72
+    Top = 420
+    Width = 865
+    Height = 21
+    TabOrder = 2
+    TextHint = 'Select'
+    OnChange = NationalityChange
+  end
+  object Sex: TComboBox
+    Left = 72
+    Top = 492
+    Width = 865
+    Height = 21
+    TabOrder = 3
+    TextHint = 'Select'
+    OnChange = NationalityChange
+  end
+  object DateOfBirth: TEdit
+    Left = 72
+    Top = 564
+    Width = 865
+    Height = 21
+    TabOrder = 4
+    TextHint = 'dd/mm/yyyy'
+  end
+  object EmailAddress: TEdit
+    Left = 72
+    Top = 636
+    Width = 865
+    Height = 21
+    TabOrder = 5
+    TextHint = 'Email Address'
+  end
+  object MobileNumber: TEdit
+    Left = 72
+    Top = 708
+    Width = 865
+    Height = 21
+    TabOrder = 6
+    TextHint = '+233'
+  end
+end

@@ -2,13 +2,13 @@ program MerchantOnboarding_p;
 
 uses
   Vcl.Forms,
-  MerchantOnboarding_u in 'MerchantOnboarding_u.pas' {Form4};
+  MerchantOnboarding_u in 'MerchantOnboarding_u.pas' {MainPage};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm4, Form4);
+  Application.CreateForm(TMainPage, MainPage);
   Application.Run;
 end.

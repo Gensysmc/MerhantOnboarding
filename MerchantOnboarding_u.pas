@@ -24,6 +24,16 @@ type
     EmailAddress: TEdit;
     Label9: TLabel;
     MobileNumber: TEdit;
+    Label10: TLabel;
+    NationalID: TEdit;
+    Label11: TLabel;
+    DocumentNumber: TEdit;
+    Label12: TLabel;
+    PlaceOfInsurance: TEdit;
+    Label13: TLabel;
+    Edit1: TEdit;
+    Label14: TLabel;
+    Edit2: TEdit;
     procedure NationalityChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
